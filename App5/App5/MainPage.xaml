@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App5"
+             x:Class="App5.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+        <Entry Text="Hours Work" x:Name="HrsWrk" />
+
+        <Picker x:Name=" EmpStatus" Title="Select Employee Status" >
+
+            <Picker.ItemsSource>
+                <Array Type="{x:Type x:String}">
+
+                    <x:String>R</x:String>
+                    <x:String>C</x:String>
+                    <x:String>P</x:String>
+                    <x:String>T</x:String>
+                    <x:String>Others</x:String>
+                </Array>
+            </Picker.ItemsSource>
+            
+            
+            
+        </Picker>
+
+        
+        
+
+
+        <Picker x:Name="CivStatus" Title="Select Civil Status" >
+
+            <Picker.ItemsSource>
+                <Array Type="{x:Type x:String}">
+
+                    <x:String>M</x:String>
+                    <x:String>S</x:String>
+                    <x:String>Others</x:String>
+                </Array>
+            </Picker.ItemsSource>
+
+
+
+        </Picker>
+
+        <Label Text="Gross Income" x:Name="Gross" />
+        <Label Text="Deduction" x:Name="Deduct" />
+        <Label Text="Net Income" x:Name="NetInc" />
+
+        <Button Text="Calculate" Clicked="Button_Clicked"/>
+
+
+
+    </StackLayout>
+
+</ContentPage>
